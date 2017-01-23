@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Set your package name here -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="in.celest.xash3d.mod_example"
+      package="in.celest.xash3d.Cracklifecampaign"
       android:versionCode="1"
-      android:versionName="1.0">
+      android:versionName="Beta">
     <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="5"/>
     <!-- Set your application name here -->
-    <application android:label="Example-mod" android:debuggable="true">
+	<application 
+android:icon="@drawable/cl" 
+android:label="Crack Life Camp mode" 
+android:debuggable="true">
     <!-- Set your launcher title here -->
         <activity android:name="in.celest.xash3d.LauncherActivity"
-                  android:label="Example mod"
+                  android:label="¿skcid kcus uoy oD"
 			android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

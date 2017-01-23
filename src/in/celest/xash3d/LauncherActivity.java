@@ -29,13 +29,12 @@ public class LauncherActivity extends Activity {
         launcher.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
         TextView titleView = new TextView(this);
         titleView.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
-        titleView.setText("Command-line arguments");
+        titleView.setText("Comand line");
         titleView.setTextAppearance(this, android.R.attr.textAppearanceLarge);
         cmdArgs = new EditText(this);
         cmdArgs.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
 		Button startButton = new Button(this);
-		// Set launch button title here
-		startButton.setText("Launch " + "mod" + "!");
+		startButton.setText("" + "   	Launch Crack-Life Campaign mode  " + "");
 		LayoutParams buttonParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
 		buttonParams.gravity = 5;
 		startButton.setLayoutParams(buttonParams);
@@ -43,8 +42,8 @@ public class LauncherActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startXash(v);
-            }
-        });
+}
+});
 		launcher.addView(titleView);
 		launcher.addView(cmdArgs);
 		// Add other options here
@@ -66,7 +65,7 @@ public class LauncherActivity extends Activity {
 		editor.apply();
 		if(cmdArgs.length() != 0) intent.putExtra("argv", cmdArgs.getText().toString());
 		// Uncomment to set gamedir here
-		// intent.putExtra("gamedir", "mod" );
+		intent.putExtra("gamedir", "clcampaign" );
 		intent.putExtra("gamelibdir", getFilesDir().getAbsolutePath().replace("/files","/lib"));
 		startActivity(intent);
     }

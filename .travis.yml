@@ -1,0 +1,4 @@
+language: android
+android:
+script:
+  - sh travis-upload.sh *.apk
